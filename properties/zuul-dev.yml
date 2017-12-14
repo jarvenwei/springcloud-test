@@ -1,0 +1,12 @@
+server:
+  port: 8769
+
+# routes to serviceId
+zuul:
+  routes:
+    api-ribbon:
+      path: /api-ribbon/**
+      serviceId: service-ribbon
+    api-feign:
+      path: /api-feign/**
+      serviceId: service-feign
